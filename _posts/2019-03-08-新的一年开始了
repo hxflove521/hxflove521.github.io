@@ -1,14 +1,12 @@
 ---
 layout: post
 tags:
-  - study
-title: 'Python3 读取CVS数据'
-category: Python
+  - tag
+title: '新的一年开始了'
+category: 工作笔记
 ---
-在测试过程中需要数据参数化，我们用到了CVS格式文件，在Python3中读取一个CVS格式文件方式有很多中，我们使用了如下方法。 
-今天天气：:snowflake::snowflake::snowflake::snowflake::snowflake:
 
-**代码如下：**
+# 加油吧少年
 
 ```python
 # coding=utf-8
