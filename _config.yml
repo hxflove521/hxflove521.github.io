@@ -112,7 +112,7 @@ syntax-highlight: True
 
 events:
   - image: "/img/timeline/spidertocat.png"
-    date: "Jan 2017 - Today"
+    date: "OCT 2021 - Today"
     description: "Saving the neighborhood!"
   - image: "/img/timeline/baracktocat.jpg"
     date: "Jan 2017"
