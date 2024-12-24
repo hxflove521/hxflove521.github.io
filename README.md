@@ -1,85 +1,76 @@
-# { Personal } Jekyll Theme
-![Build Status](https://travis-ci.org/PanosSakkos/personal-jekyll-theme.svg?branch=master)
-![license](https://img.shields.io/badge/license-MIT-blue.svg?link=https://github.com/dono-app/ios/blob/master/LICENSE)
-[![Join the chat at https://gitter.im/PanosSakkos/personal-jekyll-theme](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/PanosSakkos/personal-jekyll-theme?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+<p align="center"><img alt="live.fanmingming.com" src="https://live.fanmingming.com/logo.png"></p>
+<h1 align="center"> ✯ 一个可直连访问的电视/广播图标库与相关工具项目 ✯ </h1>
+<h3 align="center">🔕 永久免费 直连访问 完整开源 不断完善的台标 支持IPv4/IPv6双栈访问 🔕</h3>
 
-{ Personal } is a free responsive Jekyll theme, about you :wink:
+<p align="center">
+<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/fanmingming/live?style=flat-square">
+<img alt="GitHub forks" src="https://img.shields.io/github/forks/fanmingming/live?style=flat-square">
+<img alt="GitHub issues" src="https://img.shields.io/github/issues/fanmingming/live?style=flat-square">
+<img alt="GitHub watchers" src="https://img.shields.io/github/watchers/fanmingming/live?style=flat-square">
+<img alt="GitHub contributors" src="https://img.shields.io/github/contributors/fanmingming/live?style=flat-square">
+<img alt="GitHub" src="https://img.shields.io/github/license/fanmingming/live?style=flat-square">
+</p>
 
-You can watch it in action [here](https://panossakkos.github.io/personal-jekyll-theme/)!
+---
 
-<img src="https://github.com/panossakkos/personal-jekyll-theme/raw/master/.github/personal-mobile.mov.gif" height="480">
+## 🤹‍♂️使用方法:
 
-<img src="https://github.com/panossakkos/personal-jekyll-theme/raw/master/.github/personal-desktop.mov.gif" height="600" width="960">
+### 🌇电视/广播图标库：
 
-## What value does { Personal } add
+| 类 别  | 调用路径                                       | 最后更新   |
+|-------|------------------------------------------------|------------|
+| 📺电视  | [https://live.fanmingming.cn/tv/{name}.png](https://github.com/fanmingming/live/tree/main/tv) | 2024.12.01    |
+| 📻广播  | [https://live.fanmingming.cn/radio/{name}.png](https://github.com/fanmingming/live/tree/main/radio) | 2024.8.29   |
 
-* Fork of [Timeline](https://github.com/kirbyt/timeline-jekyll-theme) (mashup of [Grayscale by Start Bootstrap](https://github.com/IronSummitMedia/startbootstrap-grayscale) and [Agency Jekyll Theme](https://github.com/y7kim/agency-jekyll-theme))
-  * Modern and minimal design
-    * Responsive templates for home page, blog archive and posts. Looks great on mobile, tablet, and desktop devices
-    * Sweet animations
-    * Gracefully degrades in older browsers. Compatible with Internet Explorer 8+ and all modern browsers
-  * Timeline
-    * Tell your story so far with a sleek timeline of dates, pictures and descriptions
-  * White on black text, making the reading experience tireless
-  * Google analytics  
-* Customization and full control of your website and blog through the site config
-* Customization of the website's coloring
-* Blogging functionality
-  * Preview of the latest post in the home page
-  * Archive page
-  * Syntax highlighting
-  * Emojis
-  * Gesture navigation in archive and post pages by swiping
-  * Hashtags
-  * Categories
-  * Disqus comments
-  * Bootstrap share buttons
-  * RSS feed
-* Author blurb under the posts
-* 404 page
-* iOS and Android Web App mode
-* Enforcing of https protocol
-* Protection from email harvesting
-* Sitemap
-* Travis CI integration with [html-proofer](https://github.com/gjtorikian/html-proofer)
+### ⛓️创建您的m3u订阅链接：
+ - 下载 `demo.m3u` 空白示例文件并使用文本编辑软件打开。
+   - [https://live.fanmingming.cn/tv/m3u/demo.m3u](https://live.fanmingming.cn/tv/m3u/demo.m3u)
 
-## Documentation
+ - 参考下方示例代码将`可用的CCTV1节目源`替换为您当地可用的直播源链接，依此类推逐个替换。
 
-The theme contains documentation in the form of [blog posts](https://panossakkos.github.io/personal-jekyll-theme/blog/index.html).
-
-## How to run locally
-
-First, you need to install jekyll and the dependencies of { Personal } by running:
-
-```shell
-./scripts/install
+```
+#EXTM3U x-tvg-url="https://live.fanmingming.cn/e.xml"
+#EXTINF:-1 tvg-name="CCTV1" tvg-logo="https://live.fanmingming.cn/tv/CCTV1.png" group-title="央视",CCTV-1 综合
+可用的CCTV1节目源
+此处省略...
 ```
 
-Then, you can build and serve your website by simply running:
+ - 将编辑完成的m3u文件上传到您的Github仓库。
+ - 为您的Github仓库开启Pages。
+ - 通过播放器订阅您的m3u链接。
 
-```shell
-./scripts/serve-production
-```
+> 关于Github Pages：[https://docs.github.com/en/enterprise-cloud@latest/pages/quickstart](https://docs.github.com/en/enterprise-cloud@latest/pages/quickstart)
 
-To serve across lan (requires su to forward the port 4000 over lan):
+## 🛠️工具
+- 📆**EPG接口地址**：
+  -  [https://live.fanmingming.cn/e.xml](https://live.fanmingming.cn/e.xml)
+- 🏞️**Bing每日图片**：
+  -  [https://fanmingming.com/bing](https://fanmingming.com/bing)
+- 🎞️**m3u8在线下载**：
+  -  [https://live.fanmingming.cn/m3u8](https://live.fanmingming.cn/m3u8)
+- 🆕**TXT转M3U格式**：
+  - [https://live.fanmingming.cn/txt2m3u](https://live.fanmingming.cn/txt2m3u)
+- 📄**在线M3U转TXT**：
+  - Demo🔗 [https://fanmingming.com/txt?url=https://live.fanmingming.com/tv/m3u/ipv6.m3u](https://fanmingming.com/txt?url=https://live.fanmingming.cn/tv/m3u/ipv6.m3u)
+- 🌐**M3U8 Web Player**:
+  - Demo🔗 [https://live.fanmingming.cn/player/?vurl=https://0472.org/hls/cgtn.m3u8](https://live.fanmingming.cn/player/?vurl=https://0472.org/hls/cgtn.m3u8)
 
-```shell
-./scripts/serve-lan-production
-```
+## 📖说明
+- 项目EPG接口为112114.xyz站点分发，本项目无法确保其准确性。
+- 通过M3U8 Web Player测试直播源需使用https协议的直播源链接。
+- 在线M3U转TXT工具构建在Vercel，不会记录您的访问日志请放心使用。
+- TXT转M3U工具为前端网页转换，无需上传文件，粘贴即转换，安全不偷源。
+- 本项目不存储任何的流媒体内容，所有的法律责任与后果应由使用者自行承担。
+- 项目`/tv/m3u/`和`/radio/m3u/`目录下的内容收集于互联网，仅供测试研究使用，本项目无法保证其有效性。
+- 主域名【`live.fanmingming.com`】的WEB访问通过Github Pages自动构建，由CloudFlare提供CDN和安全防护。
+- 镜像域名【`live.fanmingming.cn`】提供完整的资源WEB访问，通过Github Actions自动构建在CloudFlare Pages。
+- 项目所有文件均托管在[GitHub](https://github.com/fanmingming/live)且自动构建，由项目发起人公益维护，欢迎Star本项目或点击[Issues](https://github.com/fanmingming/live/issues/new/choose)反馈您的问题。
+- 您可以Frok本项目到您的Github账户，将缺失的频道Logo上传到`tv`或`radio`目录下并发起拉取请求，收到请求后我们会对您提交的内容进行验证，审核通过后会自动为您署名并发布。
 
-## OSS used in { Personal }
+## 📱联系
+- Telegram: [@AirfoneBot](https://t.me/AirfoneBot)
+  - 如遇资源访问问题请通过Telegram反馈。
 
-One of the reasons { Personal } is real is the following OSS projects:
-
-  1. [Grayscale](http://startbootstrap.com/template-overviews/grayscale/)
-  2. [hammer.js](https://hammerjs.github.io/)
-  3. [highlightjs](https://highlightjs.org/)
-  4. [RRSSB](https://github.com/kni-labs/rrssb)
-  5. [Timeline](https://github.com/kirbyt/timeline-jekyll-theme)
-  6. [typed.js](https://github.com/mattboldt/typed.js/)
-
-<div style="font-size:16px;margin:0 auto;width:300px">
-    <a href="https://blockchain.info/address/1LHuKC9Em3KA5yoZaf7nngnNdf9K7s2gSi">
-        <img src="https://blockchain.info/Resources/buttons/donate_64.png"/>
-    </a>
-</div>
+## 📔更新
+- 2024.12.20
+  - 由于.com域名在中国大陆无法访问，已启用镜像域名。
